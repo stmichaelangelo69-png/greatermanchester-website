@@ -609,13 +609,19 @@ a[href="#jobs"]:hover {
   }
 }
 /* ==============================
-   Compact Footer Styling
+   Fixed Footer Styling
+   ============================== */
+/* ==============================
+   Compact Footer — Stays at Page Bottom Only
    ============================== */
 .site-footer {
+  position: static;  /* no longer fixed */
+  bottom: 0;
+  width: 100%;
   background: linear-gradient(to right, #003366, #0059b3);
   color: #f0f8ff;
   text-align: center;
-  padding: 1.2rem 1rem;   /* reduced from 2.5rem */
+  padding: 1.2rem 1rem;
   margin-top: 2rem;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -629,7 +635,7 @@ a[href="#jobs"]:hover {
 
 .footer-title {
   font-family: "Oswald", sans-serif;
-  font-size: 1.2rem;   /* smaller */
+  font-size: 1.2rem;
   margin-bottom: 0.6rem;
   color: #e6f2ff;
   text-transform: uppercase;
@@ -637,7 +643,7 @@ a[href="#jobs"]:hover {
 }
 
 .footer-content p {
-  margin: 0.4rem 0;    /* tighter spacing */
+  margin: 0.4rem 0;
   line-height: 1.4;
   font-size: 0.9rem;
 }
@@ -656,14 +662,11 @@ a[href="#jobs"]:hover {
   color: #ffffff;
 }
 
+/* Remove fade effect */
 .fade-footer {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 1s ease-out;
-}
-.fade-footer.visible {
   opacity: 1;
   transform: translateY(0);
+  transition: none;
 }
 
 /* Responsive */
@@ -675,6 +678,7 @@ a[href="#jobs"]:hover {
     font-size: 0.85rem;
   }
 }
+
 
 
 
