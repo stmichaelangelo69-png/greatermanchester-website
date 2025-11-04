@@ -608,6 +608,74 @@ a[href="#jobs"]:hover {
     padding: 0.5rem 0.7rem;
   }
 }
+/* ==============================
+   Footer Styling
+   ============================== */
+.site-footer {
+  background: linear-gradient(to right, #003366, #0059b3);
+  color: #f0f8ff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin-top: 3rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #e6f2ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-content p {
+  margin: 0.8rem 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.footer-contact {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-contact a {
+  color: #66ccff;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.footer-contact a:hover {
+  color: #ffffff;
+}
+
+.fade-footer {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
+}
+.fade-footer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-title {
+    font-size: 1.2rem;
+  }
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+}
+
 
 
 
